@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style56.css">
+
+    <audio src="/resource/musicResource/G.E.M.邓紫棋 - 多远都要在一起.flac" id="audio"></audio>
+    <link rel="stylesheet" href="/resource/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+
+<body>
+    <div class="player_box">
+        <div class="album flex jc-center p-2">
+            <div class="mp3_img flex jc-center ai-center">
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="flex jc-center p-1">
+            <h1 class="music_name">邓紫棋—多远都要在一起</h1>
+        </div>
+        <div class="progress_bar flex pl-05 pr-05 flex jc-center">
+            <div class="start_time">00:00</div>
+            <div class="progress">
+                <progress id="progress">
+                </progress>
+            </div>
+            <div class="end_time">00:00</div>
+        </div>
+        <div class="control_btn pt-2">
+            <div class="flex jc-center pb-2">
+                <div class="fas fa-fast-backward pr-2"></div><!--上一首-->
+                <div class="fas fa-play pl-1 pr-1"></div><!--暂停-->
+                <div class="fas fa-fast-forward pl-2"></div><!--下一首-->
+            </div>
+            <div class="flex jc-center jc-sa">
+                <div class="fas fa-sync-alt"></div> <!--循环播放-->
+                <div class="fas fa-random"></div> <!--随机播放-->
+                <div class="fas fa-volume-mute"></div><!--静音-->
+                <div>
+                    <div class="fas fa-volume-up"></div><!--音量-->
+                    <input class="voice_range" onchange="voice_range_updown()" type="range" value="100" max="100"
+                        min="0">
+                </div>
+            </div>
+            <div class="flex jc-center pt-2">
+                <div class="p" onclick="p_t()">点我自定义音量！!</div>
+            </div>
+            <!-- <div class="fas fa-music"><FontAwesomeIcon icon="fas fa-music" /></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/js/65.js"></script>
+<script src="/js/655.js"></script>
